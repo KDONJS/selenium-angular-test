@@ -13,8 +13,8 @@ export class LoginComponent {
 
   constructor(private formBuilder: FormBuilder, private router: Router) { // Inyecta el Router
     this.loginForm = this.formBuilder.group({
-      username: ['yorlin', Validators.required],
-      password: ['yorlin', Validators.required]
+      username: ['', Validators.required],
+      password: ['', Validators.required]
     });
   }
 
